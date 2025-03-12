@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h3 class="text-center text-success">USING FORM BOOTSTRAP</h3>
+
+    <div id="alertBox" class="alert alert-success d-none">
+        <strong>Form Submitted!</strong><br>
+        <b>Name:</b> <span id="nameOutput"></span><br>
+        <b>Email:</b> <span id="emailOutput"></span><br>
+        <b>Salary:</b> <span id="salaryOutput"></span><br>
+        <b>Hire Date:</b> <span id="dateOutput"></span>
+        <button type="button" class="btn-close float-end" onclick="closeAlert()"></button>
+    </div>
+
+    <form id="bootstrapForm">
+        <div class="mb-3">
+            <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="mb-3">
+            <input type="email" id="email" class="form-control" placeholder="Email Address" required>
+        </div>
+        <div class="mb-3">
+            <input type="number" id="salary" class="form-control" placeholder="Salary" required>
+        </div>
+        <div class="mb-3">
+            <input type="date" id="hireDate" class="form-control" required>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+            <button type="button" class="btn btn-info text-white" onclick="goBack()">Back</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
